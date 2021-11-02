@@ -1,2 +1,22 @@
 Z:\C#\Bori\APP\Pizza Alex Admin\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.AssemblyReference.cache
 X:\C#\Bori\APP\Pizza Alex Admin\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.AssemblyReference.cache
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\Pizza Alex Admin.exe
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\Pizza Alex Admin.deps.json
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\Pizza Alex Admin.runtimeconfig.json
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\Pizza Alex Admin.runtimeconfig.dev.json
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\Pizza Alex Admin.dll
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\Pizza Alex Admin.pdb
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.AssemblyReference.cache
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.Accountcreate.IdAngajat.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.Inregistrare.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.meniu.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.Properties.Resources.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.sing_in.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.GenerateResource.cache
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.AssemblyInfoInputs.cache
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.AssemblyInfo.cs
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.CoreCompileInputs.cache
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.dll
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.pdb
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.genruntimeconfig.cache

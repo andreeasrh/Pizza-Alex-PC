@@ -33,6 +33,7 @@ namespace Pizza_Alex_Admin.Accountcreate
             this.employee = new System.Windows.Forms.Label();
             this.Creare = new System.Windows.Forms.Button();
             this.Close = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // IdBox
@@ -53,7 +54,7 @@ namespace Pizza_Alex_Admin.Accountcreate
             this.employee.BackColor = System.Drawing.Color.Transparent;
             this.employee.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.employee.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.employee.Location = new System.Drawing.Point(97, 57);
+            this.employee.Location = new System.Drawing.Point(72, 67);
             this.employee.Name = "employee";
             this.employee.Size = new System.Drawing.Size(109, 23);
             this.employee.TabIndex = 2;
@@ -111,5 +112,6 @@ namespace Pizza_Alex_Admin.Accountcreate
         private System.Windows.Forms.Label employee;
         private System.Windows.Forms.Button Creare;
         private System.Windows.Forms.Button Close;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

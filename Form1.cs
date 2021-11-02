@@ -15,7 +15,10 @@ namespace Pizza_Alex_Admin
         public Inregistrare()
         {
             InitializeComponent();
+
+            
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -50,6 +53,14 @@ namespace Pizza_Alex_Admin
         private void Register_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            sing_in sg = new sing_in();
+            sg.Show();
         }
     }
 }

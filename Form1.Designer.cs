@@ -201,6 +201,7 @@ namespace Pizza_Alex_Admin
             this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 12;
             this.label2.Text = "Back to LOGIN";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // Inregistrare
             // 
@@ -210,6 +211,7 @@ namespace Pizza_Alex_Admin
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(514, 772);
+            this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Already);
             this.Controls.Add(this.label1);
@@ -227,8 +229,9 @@ namespace Pizza_Alex_Admin
             this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Inregistrare";
-            this.Opacity = 0.5D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.TransparencyKey = System.Drawing.Color.MediumBlue;
             this.Load += new System.EventHandler(this.Inregistrare_Load);

@@ -46,5 +46,10 @@ namespace Pizza_Alex_Admin
         {
 
         }
+
+        private void Register_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -152,6 +152,7 @@ namespace Pizza_Alex_Admin
             this.Register.TabIndex = 8;
             this.Register.Text = "Register";
             this.Register.UseVisualStyleBackColor = false;
+            this.Register.Click += new System.EventHandler(this.Register_Click);
             // 
             // logo
             // 

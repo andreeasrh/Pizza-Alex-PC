@@ -31,7 +31,6 @@ namespace Pizza_Alex_Admin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(meniu));
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.btnSetari = new System.Windows.Forms.Button();
             this.panelSetariSubmenu = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,22 +44,16 @@ namespace Pizza_Alex_Admin
             // panelSideMenu
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panelSideMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelSideMenu.BackgroundImage")));
+            this.panelSideMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelSideMenu.Controls.Add(this.panelSetariSubmenu);
             this.panelSideMenu.Controls.Add(this.btnSetari);
-            this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 689);
+            this.panelSideMenu.Size = new System.Drawing.Size(284, 612);
             this.panelSideMenu.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(250, 119);
-            this.panelLogo.TabIndex = 0;
+            this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
             // 
             // btnSetari
             // 
@@ -68,10 +61,10 @@ namespace Pizza_Alex_Admin
             this.btnSetari.FlatAppearance.BorderSize = 0;
             this.btnSetari.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetari.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSetari.Location = new System.Drawing.Point(0, 119);
+            this.btnSetari.Location = new System.Drawing.Point(0, 0);
             this.btnSetari.Name = "btnSetari";
             this.btnSetari.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSetari.Size = new System.Drawing.Size(250, 53);
+            this.btnSetari.Size = new System.Drawing.Size(284, 53);
             this.btnSetari.TabIndex = 0;
             this.btnSetari.Text = "Setari Generale";
             this.btnSetari.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -85,9 +78,9 @@ namespace Pizza_Alex_Admin
             this.panelSetariSubmenu.Controls.Add(this.button4);
             this.panelSetariSubmenu.Controls.Add(this.button3);
             this.panelSetariSubmenu.Controls.Add(this.button2);
-            this.panelSetariSubmenu.Location = new System.Drawing.Point(3, 170);
+            this.panelSetariSubmenu.Location = new System.Drawing.Point(0, 113);
             this.panelSetariSubmenu.Name = "panelSetariSubmenu";
-            this.panelSetariSubmenu.Size = new System.Drawing.Size(250, 171);
+            this.panelSetariSubmenu.Size = new System.Drawing.Size(281, 419);
             this.panelSetariSubmenu.TabIndex = 1;
             this.panelSetariSubmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSetariSubmenu_Paint);
             // 
@@ -100,11 +93,12 @@ namespace Pizza_Alex_Admin
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(250, 40);
+            this.button2.Size = new System.Drawing.Size(281, 108);
             this.button2.TabIndex = 0;
             this.button2.Text = "button2";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -112,10 +106,10 @@ namespace Pizza_Alex_Admin
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Location = new System.Drawing.Point(0, 40);
+            this.button3.Location = new System.Drawing.Point(0, 108);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(250, 40);
+            this.button3.Size = new System.Drawing.Size(281, 74);
             this.button3.TabIndex = 1;
             this.button3.Text = "button3";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,10 +121,10 @@ namespace Pizza_Alex_Admin
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.LightGray;
-            this.button4.Location = new System.Drawing.Point(0, 80);
+            this.button4.Location = new System.Drawing.Point(0, 182);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(250, 40);
+            this.button4.Size = new System.Drawing.Size(281, 83);
             this.button4.TabIndex = 2;
             this.button4.Text = "button4";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,10 +136,10 @@ namespace Pizza_Alex_Admin
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.LightGray;
-            this.button5.Location = new System.Drawing.Point(0, 120);
+            this.button5.Location = new System.Drawing.Point(0, 265);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(250, 40);
+            this.button5.Size = new System.Drawing.Size(281, 94);
             this.button5.TabIndex = 3;
             this.button5.Text = "button5";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -157,7 +151,7 @@ namespace Pizza_Alex_Admin
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1304, 689);
+            this.ClientSize = new System.Drawing.Size(1111, 612);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -175,7 +169,6 @@ namespace Pizza_Alex_Admin
 
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnSetari;
-        private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelSetariSubmenu;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;

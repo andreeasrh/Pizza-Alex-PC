@@ -14,5 +14,10 @@ namespace Pizza_Alex_Admin
         {
             InitializeComponent();
         }
+
+        private void Already_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

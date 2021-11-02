@@ -26,7 +26,9 @@ namespace Pizza_Alex_Admin
 
         private void Register_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            meniu mn = new meniu();
+            mn.Show();
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)

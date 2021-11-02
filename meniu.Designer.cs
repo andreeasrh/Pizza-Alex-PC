@@ -30,149 +30,145 @@ namespace Pizza_Alex_Admin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(meniu));
-            this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.btnSetari = new System.Windows.Forms.Button();
-            this.panelSetariSubmenu = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panelSideMenu.SuspendLayout();
-            this.panelSetariSubmenu.SuspendLayout();
+            this.panelDreapta = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelSus = new System.Windows.Forms.Panel();
+            this.minimise = new System.Windows.Forms.Button();
+            this.max = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
+            this.ptnSlide = new System.Windows.Forms.PictureBox();
+            this.panelCentru = new System.Windows.Forms.Panel();
+            this.panelDreapta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelSus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptnSlide)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelSideMenu
+            // panelDreapta
             // 
-            this.panelSideMenu.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panelSideMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelSideMenu.BackgroundImage")));
-            this.panelSideMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelSideMenu.Controls.Add(this.panelSetariSubmenu);
-            this.panelSideMenu.Controls.Add(this.btnSetari);
-            this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(284, 612);
-            this.panelSideMenu.TabIndex = 0;
-            this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
+            this.panelDreapta.BackColor = System.Drawing.Color.Chocolate;
+            this.panelDreapta.Controls.Add(this.pictureBox2);
+            this.panelDreapta.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelDreapta.Location = new System.Drawing.Point(0, 0);
+            this.panelDreapta.Name = "panelDreapta";
+            this.panelDreapta.Size = new System.Drawing.Size(250, 612);
+            this.panelDreapta.TabIndex = 0;
+            this.panelDreapta.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDreapta_Paint);
             // 
-            // btnSetari
+            // pictureBox2
             // 
-            this.btnSetari.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSetari.FlatAppearance.BorderSize = 0;
-            this.btnSetari.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetari.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSetari.Location = new System.Drawing.Point(0, 0);
-            this.btnSetari.Name = "btnSetari";
-            this.btnSetari.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSetari.Size = new System.Drawing.Size(284, 53);
-            this.btnSetari.TabIndex = 0;
-            this.btnSetari.Text = "Setari Generale";
-            this.btnSetari.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetari.UseVisualStyleBackColor = true;
-            this.btnSetari.Click += new System.EventHandler(this.button1_Click);
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(63, 42);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(129, 64);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
-            // panelSetariSubmenu
+            // panelSus
             // 
-            this.panelSetariSubmenu.BackColor = System.Drawing.Color.CadetBlue;
-            this.panelSetariSubmenu.Controls.Add(this.button5);
-            this.panelSetariSubmenu.Controls.Add(this.button4);
-            this.panelSetariSubmenu.Controls.Add(this.button3);
-            this.panelSetariSubmenu.Controls.Add(this.button2);
-            this.panelSetariSubmenu.Location = new System.Drawing.Point(0, 113);
-            this.panelSetariSubmenu.Name = "panelSetariSubmenu";
-            this.panelSetariSubmenu.Size = new System.Drawing.Size(281, 419);
-            this.panelSetariSubmenu.TabIndex = 1;
-            this.panelSetariSubmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSetariSubmenu_Paint);
+            this.panelSus.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelSus.Controls.Add(this.minimise);
+            this.panelSus.Controls.Add(this.max);
+            this.panelSus.Controls.Add(this.close);
+            this.panelSus.Controls.Add(this.ptnSlide);
+            this.panelSus.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSus.Location = new System.Drawing.Point(250, 0);
+            this.panelSus.Name = "panelSus";
+            this.panelSus.Size = new System.Drawing.Size(861, 69);
+            this.panelSus.TabIndex = 1;
             // 
-            // button2
+            // minimise
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(281, 108);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.minimise.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minimise.BackgroundImage")));
+            this.minimise.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.minimise.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimise.Location = new System.Drawing.Point(732, 12);
+            this.minimise.Name = "minimise";
+            this.minimise.Size = new System.Drawing.Size(35, 35);
+            this.minimise.TabIndex = 3;
+            this.minimise.UseVisualStyleBackColor = true;
+            this.minimise.Click += new System.EventHandler(this.minimise_Click_1);
             // 
-            // button3
+            // max
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Location = new System.Drawing.Point(0, 108);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(281, 74);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "button3";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.max.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("max.BackgroundImage")));
+            this.max.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.max.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.max.Location = new System.Drawing.Point(773, 12);
+            this.max.Name = "max";
+            this.max.Size = new System.Drawing.Size(35, 35);
+            this.max.TabIndex = 2;
+            this.max.UseVisualStyleBackColor = true;
+            this.max.Click += new System.EventHandler(this.minimise_Click);
             // 
-            // button4
+            // close
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.LightGray;
-            this.button4.Location = new System.Drawing.Point(0, 182);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(281, 83);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "button4";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("close.BackgroundImage")));
+            this.close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close.Location = new System.Drawing.Point(814, 12);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(35, 35);
+            this.close.TabIndex = 1;
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button5
+            // ptnSlide
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.LightGray;
-            this.button5.Location = new System.Drawing.Point(0, 265);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(281, 94);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "button5";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
+            this.ptnSlide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptnSlide.BackgroundImage")));
+            this.ptnSlide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptnSlide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptnSlide.Location = new System.Drawing.Point(6, 12);
+            this.ptnSlide.Name = "ptnSlide";
+            this.ptnSlide.Size = new System.Drawing.Size(35, 35);
+            this.ptnSlide.TabIndex = 0;
+            this.ptnSlide.TabStop = false;
+            this.ptnSlide.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panelCentru
+            // 
+            this.panelCentru.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelCentru.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCentru.Location = new System.Drawing.Point(250, 69);
+            this.panelCentru.Name = "panelCentru";
+            this.panelCentru.Size = new System.Drawing.Size(861, 543);
+            this.panelCentru.TabIndex = 0;
+            this.panelCentru.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCentru_Paint);
             // 
             // meniu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1111, 612);
-            this.Controls.Add(this.panelSideMenu);
+            this.Controls.Add(this.panelCentru);
+            this.Controls.Add(this.panelSus);
+            this.Controls.Add(this.panelDreapta);
             this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "meniu";
             this.Text = "Pizza Alex";
             this.Load += new System.EventHandler(this.meniu_Load);
-            this.panelSideMenu.ResumeLayout(false);
-            this.panelSetariSubmenu.ResumeLayout(false);
+            this.panelDreapta.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelSus.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptnSlide)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelSideMenu;
-        private System.Windows.Forms.Button btnSetari;
-        private System.Windows.Forms.Panel panelSetariSubmenu;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panelDreapta;
+        private System.Windows.Forms.Panel panelSus;
+        private System.Windows.Forms.PictureBox ptnSlide;
+        private System.Windows.Forms.Panel panelCentru;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button close;
+        private System.Windows.Forms.Button minimise;
+        private System.Windows.Forms.Button max;
     }
 }

@@ -32,17 +32,19 @@ namespace Pizza_Alex_Admin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inregistrare));
             this.loginT = new System.Windows.Forms.Label();
             this.labelUser = new System.Windows.Forms.Label();
-            this.textUserr = new System.Windows.Forms.TextBox();
+            this.usernameRegister = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.passwordRegister = new System.Windows.Forms.TextBox();
             this.Password2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ShowBox = new System.Windows.Forms.CheckBox();
-            this.Register = new System.Windows.Forms.Button();
+            this.confirmpassRegister = new System.Windows.Forms.TextBox();
+            this.checkBoxRegister = new System.Windows.Forms.CheckBox();
+            this.btnRegister_Click = new System.Windows.Forms.Button();
             this.logo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Already = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.clearRegister = new System.Windows.Forms.Button();
+            this.statuspass = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // loginT
@@ -70,15 +72,16 @@ namespace Pizza_Alex_Admin
             this.labelUser.TabIndex = 1;
             this.labelUser.Text = "Username";
             // 
-            // textUserr
+            // usernameRegister
             // 
-            this.textUserr.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textUserr.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textUserr.ForeColor = System.Drawing.SystemColors.Window;
-            this.textUserr.Location = new System.Drawing.Point(177, 126);
-            this.textUserr.Name = "textUserr";
-            this.textUserr.Size = new System.Drawing.Size(181, 27);
-            this.textUserr.TabIndex = 2;
+            this.usernameRegister.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.usernameRegister.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.usernameRegister.ForeColor = System.Drawing.SystemColors.Window;
+            this.usernameRegister.Location = new System.Drawing.Point(177, 126);
+            this.usernameRegister.Name = "usernameRegister";
+            this.usernameRegister.Size = new System.Drawing.Size(181, 27);
+            this.usernameRegister.TabIndex = 2;
+            this.usernameRegister.TextChanged += new System.EventHandler(this.textUserr_TextChanged);
             // 
             // Password
             // 
@@ -86,22 +89,22 @@ namespace Pizza_Alex_Admin
             this.Password.BackColor = System.Drawing.Color.Transparent;
             this.Password.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Password.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.Password.Location = new System.Drawing.Point(225, 177);
+            this.Password.Location = new System.Drawing.Point(225, 169);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(86, 23);
             this.Password.TabIndex = 3;
             this.Password.Text = "Password";
             this.Password.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // passwordRegister
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(177, 203);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 27);
-            this.textBox1.TabIndex = 4;
+            this.passwordRegister.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.passwordRegister.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.passwordRegister.ForeColor = System.Drawing.SystemColors.Window;
+            this.passwordRegister.Location = new System.Drawing.Point(177, 195);
+            this.passwordRegister.Name = "passwordRegister";
+            this.passwordRegister.Size = new System.Drawing.Size(181, 27);
+            this.passwordRegister.TabIndex = 4;
             // 
             // Password2
             // 
@@ -109,50 +112,50 @@ namespace Pizza_Alex_Admin
             this.Password2.BackColor = System.Drawing.Color.Transparent;
             this.Password2.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Password2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.Password2.Location = new System.Drawing.Point(187, 257);
+            this.Password2.Location = new System.Drawing.Point(187, 233);
             this.Password2.Name = "Password2";
             this.Password2.Size = new System.Drawing.Size(155, 23);
             this.Password2.TabIndex = 5;
             this.Password2.Text = "Confirm Password";
             // 
-            // textBox2
+            // confirmpassRegister
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(177, 283);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(181, 27);
-            this.textBox2.TabIndex = 6;
+            this.confirmpassRegister.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.confirmpassRegister.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.confirmpassRegister.ForeColor = System.Drawing.SystemColors.Window;
+            this.confirmpassRegister.Location = new System.Drawing.Point(177, 259);
+            this.confirmpassRegister.Name = "confirmpassRegister";
+            this.confirmpassRegister.Size = new System.Drawing.Size(181, 27);
+            this.confirmpassRegister.TabIndex = 6;
             // 
-            // ShowBox
+            // checkBoxRegister
             // 
-            this.ShowBox.AutoSize = true;
-            this.ShowBox.BackColor = System.Drawing.Color.Transparent;
-            this.ShowBox.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.ShowBox.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.ShowBox.Location = new System.Drawing.Point(201, 316);
-            this.ShowBox.Name = "ShowBox";
-            this.ShowBox.Size = new System.Drawing.Size(141, 24);
-            this.ShowBox.TabIndex = 7;
-            this.ShowBox.Text = "Show Password";
-            this.ShowBox.UseVisualStyleBackColor = false;
-            this.ShowBox.CheckedChanged += new System.EventHandler(this.ShowBox_CheckedChanged);
+            this.checkBoxRegister.AutoSize = true;
+            this.checkBoxRegister.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxRegister.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.checkBoxRegister.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.checkBoxRegister.Location = new System.Drawing.Point(201, 292);
+            this.checkBoxRegister.Name = "checkBoxRegister";
+            this.checkBoxRegister.Size = new System.Drawing.Size(141, 24);
+            this.checkBoxRegister.TabIndex = 7;
+            this.checkBoxRegister.Text = "Show Password";
+            this.checkBoxRegister.UseVisualStyleBackColor = false;
+            this.checkBoxRegister.CheckedChanged += new System.EventHandler(this.ShowBox_CheckedChanged);
             // 
-            // Register
+            // btnRegister_Click
             // 
-            this.Register.BackColor = System.Drawing.Color.Transparent;
-            this.Register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Register.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Register.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.Register.Location = new System.Drawing.Point(148, 346);
-            this.Register.Name = "Register";
-            this.Register.Size = new System.Drawing.Size(242, 48);
-            this.Register.TabIndex = 8;
-            this.Register.Text = "Register";
-            this.Register.UseVisualStyleBackColor = false;
-            this.Register.Click += new System.EventHandler(this.Register_Click);
+            this.btnRegister_Click.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegister_Click.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegister_Click.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister_Click.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnRegister_Click.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnRegister_Click.Location = new System.Drawing.Point(148, 322);
+            this.btnRegister_Click.Name = "btnRegister_Click";
+            this.btnRegister_Click.Size = new System.Drawing.Size(242, 48);
+            this.btnRegister_Click.TabIndex = 8;
+            this.btnRegister_Click.Text = "Register";
+            this.btnRegister_Click.UseVisualStyleBackColor = false;
+            this.btnRegister_Click.Click += new System.EventHandler(this.Register_Click);
             // 
             // logo
             // 
@@ -182,7 +185,7 @@ namespace Pizza_Alex_Admin
             this.Already.BackColor = System.Drawing.Color.Transparent;
             this.Already.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Already.ForeColor = System.Drawing.SystemColors.Menu;
-            this.Already.Location = new System.Drawing.Point(177, 406);
+            this.Already.Location = new System.Drawing.Point(173, 382);
             this.Already.Name = "Already";
             this.Already.Size = new System.Drawing.Size(189, 20);
             this.Already.TabIndex = 11;
@@ -196,12 +199,39 @@ namespace Pizza_Alex_Admin
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Chocolate;
-            this.label2.Location = new System.Drawing.Point(205, 426);
+            this.label2.Location = new System.Drawing.Point(201, 402);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 12;
             this.label2.Text = "Back to LOGIN";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // clearRegister
+            // 
+            this.clearRegister.BackColor = System.Drawing.Color.Red;
+            this.clearRegister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clearRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearRegister.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.clearRegister.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.clearRegister.Location = new System.Drawing.Point(30, 324);
+            this.clearRegister.Name = "clearRegister";
+            this.clearRegister.Size = new System.Drawing.Size(83, 46);
+            this.clearRegister.TabIndex = 13;
+            this.clearRegister.Text = "Clear";
+            this.clearRegister.UseVisualStyleBackColor = false;
+            this.clearRegister.Click += new System.EventHandler(this.clearRegister_Click);
+            // 
+            // statuspass
+            // 
+            this.statuspass.BackColor = System.Drawing.SystemColors.WindowText;
+            this.statuspass.ForeColor = System.Drawing.Color.Red;
+            this.statuspass.Location = new System.Drawing.Point(30, 696);
+            this.statuspass.Name = "statuspass";
+            this.statuspass.Size = new System.Drawing.Size(490, 27);
+            this.statuspass.TabIndex = 14;
+            this.statuspass.Text = "Error: Password Doesn\'t Match";
+            this.statuspass.Visible = false;
+            this.statuspass.TextChanged += new System.EventHandler(this.statuspass_TextChanged);
             // 
             // Inregistrare
             // 
@@ -212,17 +242,19 @@ namespace Pizza_Alex_Admin
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(514, 772);
             this.ControlBox = false;
+            this.Controls.Add(this.statuspass);
+            this.Controls.Add(this.clearRegister);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Already);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.logo);
-            this.Controls.Add(this.Register);
-            this.Controls.Add(this.ShowBox);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnRegister_Click);
+            this.Controls.Add(this.checkBoxRegister);
+            this.Controls.Add(this.confirmpassRegister);
             this.Controls.Add(this.Password2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passwordRegister);
             this.Controls.Add(this.Password);
-            this.Controls.Add(this.textUserr);
+            this.Controls.Add(this.usernameRegister);
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.loginT);
             this.DoubleBuffered = true;
@@ -244,17 +276,19 @@ namespace Pizza_Alex_Admin
 
         private System.Windows.Forms.Label loginT;
         private System.Windows.Forms.Label labelUser;
-        private System.Windows.Forms.TextBox textUserr;
+        private System.Windows.Forms.TextBox usernameRegister;
         private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox passwordRegister;
         private System.Windows.Forms.Label Password2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox ShowBox;
-        private System.Windows.Forms.Button Register;
+        private System.Windows.Forms.TextBox confirmpassRegister;
+        private System.Windows.Forms.CheckBox checkBoxRegister;
+        private System.Windows.Forms.Button btnRegister_Click;
         private System.Windows.Forms.Button logo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Already;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button clearRegister;
+        private System.Windows.Forms.TextBox statuspass;
     }
 }
 

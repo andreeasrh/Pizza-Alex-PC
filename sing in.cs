@@ -10,9 +10,12 @@ namespace Pizza_Alex_Admin
 {
     public partial class sing_in : Form
     {
+
+
         public sing_in()
         {
             InitializeComponent();
+         
            
         }
 
@@ -31,22 +34,19 @@ namespace Pizza_Alex_Admin
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            panelID.Visible = true;
-        }
+      
 
         private void Creare_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Inregistrare fr = new Inregistrare();
             fr.Show();
-        }
+    }
 
-        private void Close_Click(object sender, EventArgs e)
+      
+        private void IdBox_TextChanged(object sender, EventArgs e)
         {
-            panelID.Visible = false;
+
         }
     }
 }

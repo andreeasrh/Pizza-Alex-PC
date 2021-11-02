@@ -1,0 +1,2 @@
+Z:\C#\Bori\APP\Pizza Alex Admin\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.AssemblyReference.cache
+X:\C#\Bori\APP\Pizza Alex Admin\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.AssemblyReference.cache

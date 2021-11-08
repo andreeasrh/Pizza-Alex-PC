@@ -45,7 +45,16 @@ namespace Pizza_Alex_Admin
 
         private void ShowBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (registerboxLogin.Checked)
+            {
+                passwordRegister.PasswordChar = '\0';
+                confirmpassRegister.PasswordChar = '\0';
+            }
+            else
+            {
+                passwordRegister.PasswordChar = '•';
+                confirmpassRegister.PasswordChar = '•';
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -204,7 +213,7 @@ namespace Pizza_Alex_Admin
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxRegister.Checked)
+            if (registerboxLogin.Checked)
             {
                 passwordRegister.PasswordChar = '\0';
                 confirmpassRegister.PasswordChar = '\0';
@@ -246,6 +255,11 @@ namespace Pizza_Alex_Admin
         private void statuspass_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureboxRegister_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

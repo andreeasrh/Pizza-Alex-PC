@@ -31,136 +31,135 @@ namespace Pizza_Alex_Admin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sing_in));
             this.logo = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.passwordLogin = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.Label();
-            this.textUserr = new System.Windows.Forms.TextBox();
+            this.usernameLogin = new System.Windows.Forms.TextBox();
             this.labelUser = new System.Windows.Forms.Label();
             this.loginT = new System.Windows.Forms.Label();
             this.Register = new System.Windows.Forms.Button();
-            this.ShowBox = new System.Windows.Forms.CheckBox();
+            this.showboxLogin = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button2 = new System.Windows.Forms.Button();
+            this.clearRegister2 = new System.Windows.Forms.Button();
+            this.pictureboxLogin = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // logo
             // 
             this.logo.BackColor = System.Drawing.Color.Black;
-            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
-            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            resources.ApplyResources(this.logo, "logo");
             this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logo.ForeColor = System.Drawing.SystemColors.Window;
-            this.logo.Location = new System.Drawing.Point(871, 12);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(74, 44);
-            this.logo.TabIndex = 10;
             this.logo.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // passwordLogin
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(280, 274);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 27);
-            this.textBox1.TabIndex = 15;
+            this.passwordLogin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            resources.ApplyResources(this.passwordLogin, "passwordLogin");
+            this.passwordLogin.ForeColor = System.Drawing.SystemColors.Window;
+            this.passwordLogin.Name = "passwordLogin";
             // 
             // Password
             // 
-            this.Password.AutoSize = true;
+            resources.ApplyResources(this.Password, "Password");
             this.Password.BackColor = System.Drawing.Color.Transparent;
-            this.Password.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Password.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.Password.Location = new System.Drawing.Point(328, 248);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(86, 23);
-            this.Password.TabIndex = 14;
-            this.Password.Text = "Password";
             // 
-            // textUserr
+            // usernameLogin
             // 
-            this.textUserr.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textUserr.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textUserr.ForeColor = System.Drawing.SystemColors.Window;
-            this.textUserr.Location = new System.Drawing.Point(280, 197);
-            this.textUserr.Name = "textUserr";
-            this.textUserr.Size = new System.Drawing.Size(181, 27);
-            this.textUserr.TabIndex = 13;
+            this.usernameLogin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            resources.ApplyResources(this.usernameLogin, "usernameLogin");
+            this.usernameLogin.ForeColor = System.Drawing.SystemColors.Window;
+            this.usernameLogin.Name = "usernameLogin";
             // 
             // labelUser
             // 
-            this.labelUser.AutoSize = true;
+            resources.ApplyResources(this.labelUser, "labelUser");
             this.labelUser.BackColor = System.Drawing.Color.Transparent;
-            this.labelUser.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.labelUser.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.labelUser.Location = new System.Drawing.Point(328, 171);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(89, 23);
-            this.labelUser.TabIndex = 12;
-            this.labelUser.Text = "Username";
             // 
             // loginT
             // 
-            this.loginT.AutoSize = true;
+            resources.ApplyResources(this.loginT, "loginT");
             this.loginT.BackColor = System.Drawing.Color.Transparent;
-            this.loginT.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.loginT.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.loginT.Location = new System.Drawing.Point(290, 80);
             this.loginT.Name = "loginT";
-            this.loginT.Size = new System.Drawing.Size(156, 38);
-            this.loginT.TabIndex = 11;
-            this.loginT.Text = "Pizza Alex";
             // 
             // Register
             // 
             this.Register.BackColor = System.Drawing.Color.Transparent;
             this.Register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Register.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.Register, "Register");
             this.Register.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.Register.Location = new System.Drawing.Point(252, 337);
             this.Register.Name = "Register";
-            this.Register.Size = new System.Drawing.Size(242, 48);
-            this.Register.TabIndex = 17;
-            this.Register.Text = "Login";
             this.Register.UseVisualStyleBackColor = false;
             this.Register.Click += new System.EventHandler(this.Register_Click);
             // 
-            // ShowBox
+            // showboxLogin
             // 
-            this.ShowBox.AutoSize = true;
-            this.ShowBox.BackColor = System.Drawing.Color.Transparent;
-            this.ShowBox.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.ShowBox.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.ShowBox.Location = new System.Drawing.Point(305, 307);
-            this.ShowBox.Name = "ShowBox";
-            this.ShowBox.Size = new System.Drawing.Size(141, 24);
-            this.ShowBox.TabIndex = 16;
-            this.ShowBox.Text = "Show Password";
-            this.ShowBox.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.showboxLogin, "showboxLogin");
+            this.showboxLogin.BackColor = System.Drawing.Color.Transparent;
+            this.showboxLogin.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.showboxLogin.Name = "showboxLogin";
+            this.showboxLogin.UseVisualStyleBackColor = false;
+            this.showboxLogin.CheckedChanged += new System.EventHandler(this.showboxLogin_CheckedChanged);
             // 
             // button1
             // 
-    
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // clearRegister2
+            // 
+            this.clearRegister2.BackColor = System.Drawing.Color.Red;
+            this.clearRegister2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.clearRegister2, "clearRegister2");
+            this.clearRegister2.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.clearRegister2.Name = "clearRegister2";
+            this.clearRegister2.UseVisualStyleBackColor = false;
+            this.clearRegister2.Click += new System.EventHandler(this.clearRegister2_Click);
+            // 
+            // pictureboxLogin
+            // 
+            resources.ApplyResources(this.pictureboxLogin, "pictureboxLogin");
+            this.pictureboxLogin.Name = "pictureboxLogin";
+            this.pictureboxLogin.TabStop = false;
+            this.pictureboxLogin.Click += new System.EventHandler(this.pictureboxRegister_Click);
             // 
             // sing_in
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(962, 528);
+            this.Controls.Add(this.pictureboxLogin);
+            this.Controls.Add(this.clearRegister2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Register);
-            this.Controls.Add(this.ShowBox);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.showboxLogin);
+            this.Controls.Add(this.passwordLogin);
             this.Controls.Add(this.Password);
-            this.Controls.Add(this.textUserr);
+            this.Controls.Add(this.usernameLogin);
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.loginT);
             this.Controls.Add(this.logo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "sing_in";
-            this.Text = "sing_in";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,14 +168,17 @@ namespace Pizza_Alex_Admin
         #endregion
 
         private System.Windows.Forms.Button logo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox passwordLogin;
         private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.TextBox textUserr;
+        private System.Windows.Forms.TextBox usernameLogin;
         private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.Label loginT;
         private System.Windows.Forms.Button Register;
-        private System.Windows.Forms.CheckBox ShowBox;
+        private System.Windows.Forms.CheckBox showboxLogin;
         private System.Windows.Forms.Button button1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button clearRegister2;
+        private System.Windows.Forms.PictureBox pictureboxLogin;
     }
 }

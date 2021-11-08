@@ -37,7 +37,7 @@ namespace Pizza_Alex_Admin
             this.passwordRegister = new System.Windows.Forms.TextBox();
             this.Password2 = new System.Windows.Forms.Label();
             this.confirmpassRegister = new System.Windows.Forms.TextBox();
-            this.checkBoxRegister = new System.Windows.Forms.CheckBox();
+            this.registerboxLogin = new System.Windows.Forms.CheckBox();
             this.btnRegister_Click = new System.Windows.Forms.Button();
             this.logo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,6 +45,8 @@ namespace Pizza_Alex_Admin
             this.label2 = new System.Windows.Forms.Label();
             this.clearRegister = new System.Windows.Forms.Button();
             this.statuspass = new System.Windows.Forms.TextBox();
+            this.pictureboxRegister = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegister)).BeginInit();
             this.SuspendLayout();
             // 
             // loginT
@@ -103,6 +105,7 @@ namespace Pizza_Alex_Admin
             this.passwordRegister.ForeColor = System.Drawing.SystemColors.Window;
             this.passwordRegister.Location = new System.Drawing.Point(177, 195);
             this.passwordRegister.Name = "passwordRegister";
+            this.passwordRegister.PasswordChar = '•';
             this.passwordRegister.Size = new System.Drawing.Size(181, 27);
             this.passwordRegister.TabIndex = 4;
             // 
@@ -125,22 +128,23 @@ namespace Pizza_Alex_Admin
             this.confirmpassRegister.ForeColor = System.Drawing.SystemColors.Window;
             this.confirmpassRegister.Location = new System.Drawing.Point(177, 259);
             this.confirmpassRegister.Name = "confirmpassRegister";
+            this.confirmpassRegister.PasswordChar = '•';
             this.confirmpassRegister.Size = new System.Drawing.Size(181, 27);
             this.confirmpassRegister.TabIndex = 6;
             // 
-            // checkBoxRegister
+            // registerboxLogin
             // 
-            this.checkBoxRegister.AutoSize = true;
-            this.checkBoxRegister.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxRegister.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.checkBoxRegister.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.checkBoxRegister.Location = new System.Drawing.Point(201, 292);
-            this.checkBoxRegister.Name = "checkBoxRegister";
-            this.checkBoxRegister.Size = new System.Drawing.Size(141, 24);
-            this.checkBoxRegister.TabIndex = 7;
-            this.checkBoxRegister.Text = "Show Password";
-            this.checkBoxRegister.UseVisualStyleBackColor = false;
-            this.checkBoxRegister.CheckedChanged += new System.EventHandler(this.ShowBox_CheckedChanged);
+            this.registerboxLogin.AutoSize = true;
+            this.registerboxLogin.BackColor = System.Drawing.Color.Transparent;
+            this.registerboxLogin.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.registerboxLogin.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.registerboxLogin.Location = new System.Drawing.Point(201, 292);
+            this.registerboxLogin.Name = "registerboxLogin";
+            this.registerboxLogin.Size = new System.Drawing.Size(141, 24);
+            this.registerboxLogin.TabIndex = 7;
+            this.registerboxLogin.Text = "Show Password";
+            this.registerboxLogin.UseVisualStyleBackColor = false;
+            this.registerboxLogin.CheckedChanged += new System.EventHandler(this.ShowBox_CheckedChanged);
             // 
             // btnRegister_Click
             // 
@@ -233,6 +237,17 @@ namespace Pizza_Alex_Admin
             this.statuspass.Visible = false;
             this.statuspass.TextChanged += new System.EventHandler(this.statuspass_TextChanged);
             // 
+            // pictureboxRegister
+            // 
+            this.pictureboxRegister.Image = ((System.Drawing.Image)(resources.GetObject("pictureboxRegister.Image")));
+            this.pictureboxRegister.Location = new System.Drawing.Point(0, 0);
+            this.pictureboxRegister.Name = "pictureboxRegister";
+            this.pictureboxRegister.Size = new System.Drawing.Size(62, 63);
+            this.pictureboxRegister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureboxRegister.TabIndex = 15;
+            this.pictureboxRegister.TabStop = false;
+            this.pictureboxRegister.Click += new System.EventHandler(this.pictureboxRegister_Click);
+            // 
             // Inregistrare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -242,6 +257,7 @@ namespace Pizza_Alex_Admin
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(514, 772);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureboxRegister);
             this.Controls.Add(this.statuspass);
             this.Controls.Add(this.clearRegister);
             this.Controls.Add(this.label2);
@@ -249,7 +265,7 @@ namespace Pizza_Alex_Admin
             this.Controls.Add(this.label1);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.btnRegister_Click);
-            this.Controls.Add(this.checkBoxRegister);
+            this.Controls.Add(this.registerboxLogin);
             this.Controls.Add(this.confirmpassRegister);
             this.Controls.Add(this.Password2);
             this.Controls.Add(this.passwordRegister);
@@ -267,6 +283,7 @@ namespace Pizza_Alex_Admin
             this.Text = "Login";
             this.TransparencyKey = System.Drawing.Color.MediumBlue;
             this.Load += new System.EventHandler(this.Inregistrare_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegister)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,7 +298,7 @@ namespace Pizza_Alex_Admin
         private System.Windows.Forms.TextBox passwordRegister;
         private System.Windows.Forms.Label Password2;
         private System.Windows.Forms.TextBox confirmpassRegister;
-        private System.Windows.Forms.CheckBox checkBoxRegister;
+        private System.Windows.Forms.CheckBox registerboxLogin;
         private System.Windows.Forms.Button btnRegister_Click;
         private System.Windows.Forms.Button logo;
         private System.Windows.Forms.Label label1;
@@ -289,6 +306,7 @@ namespace Pizza_Alex_Admin
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button clearRegister;
         private System.Windows.Forms.TextBox statuspass;
+        private System.Windows.Forms.PictureBox pictureboxRegister;
     }
 }
 

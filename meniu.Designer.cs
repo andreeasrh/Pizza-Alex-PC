@@ -43,24 +43,30 @@ namespace Pizza_Alex_Admin
             this.close = new System.Windows.Forms.Button();
             this.ptnSlide = new System.Windows.Forms.PictureBox();
             this.panelCentru = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelDreapta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelSus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptnSlide)).BeginInit();
+            this.panelCentru.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDreapta
             // 
             this.panelDreapta.BackColor = System.Drawing.Color.Chocolate;
+            this.panelDreapta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDreapta.Controls.Add(this.butMenu);
             this.panelDreapta.Controls.Add(this.butTable);
             this.panelDreapta.Controls.Add(this.butComenziF);
             this.panelDreapta.Controls.Add(this.butComenzi);
             this.panelDreapta.Controls.Add(this.pictureBox2);
             this.panelDreapta.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelDreapta.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.panelDreapta.Location = new System.Drawing.Point(0, 0);
             this.panelDreapta.Name = "panelDreapta";
-            this.panelDreapta.Size = new System.Drawing.Size(250, 612);
+            this.panelDreapta.Size = new System.Drawing.Size(244, 612);
             this.panelDreapta.TabIndex = 0;
             this.panelDreapta.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDreapta_Paint);
             // 
@@ -100,6 +106,7 @@ namespace Pizza_Alex_Admin
             this.butTable.TabIndex = 3;
             this.butTable.Text = "Mese";
             this.butTable.UseVisualStyleBackColor = true;
+            this.butTable.Click += new System.EventHandler(this.butTable_Click);
             // 
             // butComenziF
             // 
@@ -118,6 +125,7 @@ namespace Pizza_Alex_Admin
             this.butComenziF.TabIndex = 2;
             this.butComenziF.Text = "Comenzi finalizate";
             this.butComenziF.UseVisualStyleBackColor = true;
+            this.butComenziF.Click += new System.EventHandler(this.butComenziF_Click);
             // 
             // butComenzi
             // 
@@ -144,7 +152,7 @@ namespace Pizza_Alex_Admin
             this.pictureBox2.BackColor = System.Drawing.Color.Chocolate;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(65, 40);
+            this.pictureBox2.Location = new System.Drawing.Point(61, 40);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(119, 62);
             this.pictureBox2.TabIndex = 1;
@@ -159,9 +167,9 @@ namespace Pizza_Alex_Admin
             this.panelSus.Controls.Add(this.close);
             this.panelSus.Controls.Add(this.ptnSlide);
             this.panelSus.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSus.Location = new System.Drawing.Point(250, 0);
+            this.panelSus.Location = new System.Drawing.Point(244, 0);
             this.panelSus.Name = "panelSus";
-            this.panelSus.Size = new System.Drawing.Size(861, 69);
+            this.panelSus.Size = new System.Drawing.Size(867, 69);
             this.panelSus.TabIndex = 1;
             // 
             // butRestaurara
@@ -170,7 +178,7 @@ namespace Pizza_Alex_Admin
             this.butRestaurara.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butRestaurara.BackgroundImage")));
             this.butRestaurara.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.butRestaurara.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.butRestaurara.Location = new System.Drawing.Point(691, 12);
+            this.butRestaurara.Location = new System.Drawing.Point(703, 12);
             this.butRestaurara.Name = "butRestaurara";
             this.butRestaurara.Size = new System.Drawing.Size(35, 35);
             this.butRestaurara.TabIndex = 2;
@@ -184,7 +192,7 @@ namespace Pizza_Alex_Admin
             this.minimise.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.minimise.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimise.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.minimise.Location = new System.Drawing.Point(732, 12);
+            this.minimise.Location = new System.Drawing.Point(744, 12);
             this.minimise.Name = "minimise";
             this.minimise.Size = new System.Drawing.Size(35, 35);
             this.minimise.TabIndex = 3;
@@ -197,7 +205,7 @@ namespace Pizza_Alex_Admin
             this.max.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("max.BackgroundImage")));
             this.max.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.max.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.max.Location = new System.Drawing.Point(773, 12);
+            this.max.Location = new System.Drawing.Point(785, 12);
             this.max.Name = "max";
             this.max.Size = new System.Drawing.Size(35, 35);
             this.max.TabIndex = 2;
@@ -210,7 +218,7 @@ namespace Pizza_Alex_Admin
             this.close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("close.BackgroundImage")));
             this.close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.close.Location = new System.Drawing.Point(814, 12);
+            this.close.Location = new System.Drawing.Point(826, 12);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(35, 35);
             this.close.TabIndex = 1;
@@ -232,12 +240,42 @@ namespace Pizza_Alex_Admin
             // panelCentru
             // 
             this.panelCentru.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelCentru.Controls.Add(this.panel2);
+            this.panelCentru.Controls.Add(this.panel3);
+            this.panelCentru.Controls.Add(this.panel1);
             this.panelCentru.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCentru.Location = new System.Drawing.Point(250, 69);
+            this.panelCentru.Location = new System.Drawing.Point(244, 69);
             this.panelCentru.Name = "panelCentru";
-            this.panelCentru.Size = new System.Drawing.Size(861, 543);
+            this.panelCentru.Size = new System.Drawing.Size(867, 543);
             this.panelCentru.TabIndex = 0;
             this.panelCentru.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCentru_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkRed;
+            this.panel2.Location = new System.Drawing.Point(15, 437);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(823, 511);
+            this.panel2.TabIndex = 0;
+            this.panel2.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel3.Location = new System.Drawing.Point(430, 23);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(793, 508);
+            this.panel3.TabIndex = 0;
+            this.panel3.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Location = new System.Drawing.Point(68, 140);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(829, 515);
+            this.panel1.TabIndex = 0;
+            this.panel1.Visible = false;
             // 
             // meniu
             // 
@@ -258,6 +296,7 @@ namespace Pizza_Alex_Admin
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelSus.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptnSlide)).EndInit();
+            this.panelCentru.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -278,5 +317,8 @@ namespace Pizza_Alex_Admin
         private System.Windows.Forms.Button butComenziF;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button butRestaurara;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

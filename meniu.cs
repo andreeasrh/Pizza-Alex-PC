@@ -112,7 +112,10 @@ namespace Pizza_Alex_Admin
 
         private void butComenzi_Click(object sender, EventArgs e)
         {
-            
+            panel1.Visible = true;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel1.Location = new Point(3, 13);
         }
 
         private void butRestaurara_Click(object sender, EventArgs e)
@@ -132,6 +135,22 @@ namespace Pizza_Alex_Admin
             this.Hide();
             vizulizareMeniu fr = new vizulizareMeniu();
             fr.Show();
+        }
+
+        private void butComenziF_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Visible = true;
+            panel3.Visible = false;
+            panel2.Location = new Point(3, 13);
+        }
+
+        private void butTable_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Visible = false;
+            panel3.Visible = true;
+            panel3.Location = new Point(3, 13);
         }
     }
 }

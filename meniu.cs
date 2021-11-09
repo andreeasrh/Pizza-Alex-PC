@@ -130,7 +130,7 @@ namespace Pizza_Alex_Admin
         private void butMenu_Click(object sender, EventArgs e)
         {
             this.Hide();
-            vizualizareMeniu fr = new vizualizareMeniu();
+            vizulizareMeniu fr = new vizulizareMeniu();
             fr.Show();
         }
     }

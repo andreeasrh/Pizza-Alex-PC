@@ -61,7 +61,7 @@
     <Compile Update="vizMeniu\Specialitati.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="vizualizareMeniu.cs">
+    <Compile Update="vizulizareMeniu.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

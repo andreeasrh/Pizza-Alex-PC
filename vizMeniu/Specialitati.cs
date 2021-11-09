@@ -14,5 +14,11 @@ namespace Pizza_Alex_Admin.vizMeniu
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            vizMeniu.antreuri fr = new antreuri();
+            fr.Show();
+        }
     }
 }

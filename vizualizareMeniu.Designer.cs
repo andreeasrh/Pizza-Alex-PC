@@ -31,6 +31,7 @@ namespace Pizza_Alex_Admin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vizualizareMeniu));
             this.panelDreapta = new System.Windows.Forms.Panel();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
@@ -53,6 +54,7 @@ namespace Pizza_Alex_Admin
             // panelDreapta
             // 
             this.panelDreapta.BackColor = System.Drawing.Color.Chocolate;
+            this.panelDreapta.Controls.Add(this.buttonBack);
             this.panelDreapta.Controls.Add(this.textBox16);
             this.panelDreapta.Controls.Add(this.textBox15);
             this.panelDreapta.Controls.Add(this.textBox14);
@@ -74,6 +76,22 @@ namespace Pizza_Alex_Admin
             this.panelDreapta.Name = "panelDreapta";
             this.panelDreapta.Size = new System.Drawing.Size(712, 438);
             this.panelDreapta.TabIndex = 1;
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.Red;
+            this.buttonBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBack.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.buttonBack.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.buttonBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.buttonBack.Location = new System.Drawing.Point(12, 26);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(94, 39);
+            this.buttonBack.TabIndex = 19;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // textBox16
             // 
@@ -230,6 +248,7 @@ namespace Pizza_Alex_Admin
             this.textBox1.BackColor = System.Drawing.Color.FloralWhite;
             this.textBox1.Location = new System.Drawing.Point(83, 84);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(204, 27);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Produse Traditionale";
@@ -269,5 +288,6 @@ namespace Pizza_Alex_Admin
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

@@ -43,3 +43,20 @@ C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\MySqlConnec
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.genruntimeconfig.cache
 C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizualizareMeniu.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Alcool.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.antreuri.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.bauturiCalde.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.ciorbe.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Desert.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Garnituri.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.paste.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.pizza.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.preparatePeste.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.preparatePorc.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.preparatePui.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.preparateVita.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.produseTraditionale.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Racoritoare.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Salate.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Specialitati.resources
+C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizualizareMeniu.resources

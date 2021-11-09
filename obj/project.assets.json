@@ -52,23 +52,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\horva\\.nuget\\packages\\": {},
+    "C:\\Users\\tavit\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\horva\\Desktop\\GIT HUB\\Pizza-Alex-PC\\Pizza Alex Admin.csproj",
+      "projectUniqueName": "C:\\Users\\tavit\\OneDrive\\Desktop\\Pizza-Alex-PC\\Pizza Alex Admin.csproj",
       "projectName": "Pizza Alex Admin",
-      "projectPath": "C:\\Users\\horva\\Desktop\\GIT HUB\\Pizza-Alex-PC\\Pizza Alex Admin.csproj",
-      "packagesPath": "C:\\Users\\horva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\horva\\Desktop\\GIT HUB\\Pizza-Alex-PC\\obj\\",
+      "projectPath": "C:\\Users\\tavit\\OneDrive\\Desktop\\Pizza-Alex-PC\\Pizza Alex Admin.csproj",
+      "packagesPath": "C:\\Users\\tavit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tavit\\OneDrive\\Desktop\\Pizza-Alex-PC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\horva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tavit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -118,7 +118,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

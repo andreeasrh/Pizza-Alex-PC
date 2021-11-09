@@ -95,6 +95,8 @@ namespace Pizza_Alex_Admin
         private void minimise_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            
+
         }
 
         private void minimise_Click_1(object sender, EventArgs e)
@@ -106,6 +108,30 @@ namespace Pizza_Alex_Admin
         private void panelCentru_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void butComenzi_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void butRestaurara_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            
+
+        }
+
+        private void butRestaurara_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void butMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            vizualizareMeniu fr = new vizualizareMeniu();
+            fr.Show();
         }
     }
 }

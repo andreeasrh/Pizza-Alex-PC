@@ -110,5 +110,14 @@ namespace Pizza_Alex_Admin
             vizMeniu.Alcool fr = new vizMeniu.Alcool();
             fr.Show();
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            meniu fr = new meniu();
+            fr.Show();
+
+        }
     }
 }

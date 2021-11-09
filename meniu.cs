@@ -127,7 +127,7 @@ namespace Pizza_Alex_Admin
 
         private void butRestaurara_Click_1(object sender, EventArgs e)
         {
-            
+            this.Size = new Size(867, 543);
         }
 
         private void butMenu_Click(object sender, EventArgs e)

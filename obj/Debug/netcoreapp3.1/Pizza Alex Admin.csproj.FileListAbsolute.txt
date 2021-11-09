@@ -76,4 +76,3 @@ C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Salate.resources
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Specialitati.resources
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizulizareMeniu.resources
-C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.CopyComplete

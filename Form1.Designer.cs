@@ -46,6 +46,7 @@ namespace Pizza_Alex_Admin
             this.clearRegister = new System.Windows.Forms.Button();
             this.statuspass = new System.Windows.Forms.TextBox();
             this.pictureboxRegister = new System.Windows.Forms.PictureBox();
+            this.url = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegister)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@ namespace Pizza_Alex_Admin
             this.loginT.BackColor = System.Drawing.Color.Transparent;
             this.loginT.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.loginT.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.loginT.Location = new System.Drawing.Point(187, 9);
+            this.loginT.Location = new System.Drawing.Point(187, 25);
             this.loginT.Name = "loginT";
             this.loginT.Size = new System.Drawing.Size(156, 38);
             this.loginT.TabIndex = 0;
@@ -173,6 +174,7 @@ namespace Pizza_Alex_Admin
             this.logo.Size = new System.Drawing.Size(74, 44);
             this.logo.TabIndex = 9;
             this.logo.UseVisualStyleBackColor = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // label1
             // 
@@ -239,14 +241,29 @@ namespace Pizza_Alex_Admin
             // 
             // pictureboxRegister
             // 
+            this.pictureboxRegister.BackColor = System.Drawing.Color.Transparent;
             this.pictureboxRegister.Image = ((System.Drawing.Image)(resources.GetObject("pictureboxRegister.Image")));
-            this.pictureboxRegister.Location = new System.Drawing.Point(0, 0);
+            this.pictureboxRegister.Location = new System.Drawing.Point(-13, 0);
             this.pictureboxRegister.Name = "pictureboxRegister";
-            this.pictureboxRegister.Size = new System.Drawing.Size(62, 63);
+            this.pictureboxRegister.Size = new System.Drawing.Size(90, 63);
             this.pictureboxRegister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureboxRegister.TabIndex = 15;
             this.pictureboxRegister.TabStop = false;
             this.pictureboxRegister.Click += new System.EventHandler(this.pictureboxRegister_Click);
+            // 
+            // url
+            // 
+            this.url.AutoSize = true;
+            this.url.BackColor = System.Drawing.Color.Transparent;
+            this.url.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.url.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.url.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.url.Location = new System.Drawing.Point(329, 456);
+            this.url.Name = "url";
+            this.url.Size = new System.Drawing.Size(191, 38);
+            this.url.TabIndex = 22;
+            this.url.Text = "Pizza Alex.ro";
+            this.url.Click += new System.EventHandler(this.url_Click);
             // 
             // Inregistrare
             // 
@@ -257,6 +274,7 @@ namespace Pizza_Alex_Admin
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(514, 772);
             this.ControlBox = false;
+            this.Controls.Add(this.url);
             this.Controls.Add(this.pictureboxRegister);
             this.Controls.Add(this.statuspass);
             this.Controls.Add(this.clearRegister);
@@ -275,12 +293,12 @@ namespace Pizza_Alex_Admin
             this.Controls.Add(this.loginT);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Inregistrare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Register Pizza Alex";
             this.TransparencyKey = System.Drawing.Color.MediumBlue;
             this.Load += new System.EventHandler(this.Inregistrare_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegister)).EndInit();
@@ -307,6 +325,7 @@ namespace Pizza_Alex_Admin
         private System.Windows.Forms.Button clearRegister;
         private System.Windows.Forms.TextBox statuspass;
         private System.Windows.Forms.PictureBox pictureboxRegister;
+        private System.Windows.Forms.Label url;
     }
 }
 

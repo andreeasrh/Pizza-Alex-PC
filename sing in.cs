@@ -1,7 +1,9 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Security.Cryptography;
@@ -77,9 +79,70 @@ namespace Pizza_Alex_Admin
 
         private void Register_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            meniu mn = new meniu();
-            mn.Show();
+          
+
+            if (usernameLogin.Text == "")
+            {
+                MessageBox.Show("Enter your username!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (passwordLogin.Text == "")
+            {
+
+                MessageBox.Show("Enter your password!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string host = "host =172.24.1.199;";
+                string port = "port =3306;";
+                string db = "database =dbproiectjava;";
+                string user = "user=root;";
+                string pass = "password=PizzaAlexProiect2021@@;";
+                string conString = $"{host}{port}{db}{user}{pass}";
+
+                MySqlConnection con = new MySqlConnection(conString);
+                MySqlCommand cmd = new MySqlCommand();
+                DataTable sqlDt = new DataTable();
+                MySqlDataAdapter Da = new MySqlDataAdapter();
+                MySqlDataReader sqlRd;
+
+
+
+                cmd.CommandText = $"SELECT username from `dbproiectjava`.`users2` WHERE `username`=\u0022{Encrypt(usernameLogin.Text)}\u0022 AND `pass`=\u0022{Encrypt(passwordLogin.Text)}\u0022;";
+                con.Open();
+                cmd.Connection = con;
+                sqlRd = cmd.ExecuteReader();
+                sqlDt.Load(sqlRd);
+                bool verified = false;
+
+                sqlRd = cmd.ExecuteReader();
+                if (sqlRd.Read() == true)
+                { verified = true; }
+                con.Close();
+
+
+
+                if (verified == true)
+                {
+                    user = usernameLogin.Text;
+
+                    MessageBox.Show("Login Succesfully!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                    this.Hide();
+                    meniu mn = new meniu();
+                    mn.Show();
+                }
+                else
+                {
+
+
+                    MessageBox.Show("User dont exist.Make an account!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    usernameLogin.Text = "";
+                    passwordLogin.Text = "";
+                }
+
+            }
+        
+        
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -135,6 +198,31 @@ namespace Pizza_Alex_Admin
             }
         }
 
-      
+        private void url_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://alexpizza.ro/",
+                UseShellExecute = true
+            });
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://alexpizza.ro/",
+                UseShellExecute = true
+            });
+        }
+
+        private void loginT_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://alexpizza.ro/",
+                UseShellExecute = true
+            });
+        }
     }
 }

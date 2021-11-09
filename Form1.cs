@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -40,7 +41,7 @@ namespace Pizza_Alex_Admin
 
         private void loginT_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("https://alexpizza.ro/");
         }
 
         private void ShowBox_CheckedChanged(object sender, EventArgs e)
@@ -154,7 +155,7 @@ namespace Pizza_Alex_Admin
                 DataSet DS = new DataSet();
 
 
-                cmd.CommandText = $"SELECT username from `dbproiectjava`.`users2` WHERE `username`=\u0022{usernameRegister.Text}\u0022;";
+                cmd.CommandText = $"SELECT username from `dbproiectjava`.`users2` WHERE `username`=\u0022{Encrypt(usernameRegister.Text)}\u0022;";
                 con.Open();
                 cmd.Connection = con;
                 sqlRd = cmd.ExecuteReader();
@@ -174,7 +175,7 @@ namespace Pizza_Alex_Admin
                 if (verified == false)
 
                 {
-                    cmd.CommandText = "INSERT INTO `dbproiectjava`.`users2` (`username`,`pass`) VALUES " + '(' + '\u0022' + usernameRegister.Text + '\u0022' + ","+ '\u0022' + passwordRegister.Text + '\u0022' + ")";
+                    cmd.CommandText = "INSERT INTO `dbproiectjava`.`users2` (`username`,`pass`) VALUES " + '(' + '\u0022' + Encrypt(usernameRegister.Text) + '\u0022' + ","+ '\u0022' + Encrypt(passwordRegister.Text) + '\u0022' + ")";
 
                     con.Open();
                     cmd.Connection = con;
@@ -184,6 +185,10 @@ namespace Pizza_Alex_Admin
 
 
                     MessageBox.Show("YEEY!Your Account has been Succes!Go to Login Page!", "Account Registred!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    this.Close();
+
+                    sing_in form = new sing_in();
+                    form.Show();
                 }
                 else if (verified == true)
                 {
@@ -260,6 +265,24 @@ namespace Pizza_Alex_Admin
         private void pictureboxRegister_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://alexpizza.ro/",
+                UseShellExecute = true
+            });
+        }
+
+        private void url_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://alexpizza.ro/",
+                UseShellExecute = true
+            });
         }
     }
 }

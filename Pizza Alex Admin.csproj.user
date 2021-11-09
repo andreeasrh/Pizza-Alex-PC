@@ -13,5 +13,56 @@
     <Compile Update="sing in.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="vizMeniu\Alcool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\antreuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\bauturiCalde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\ciorbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\Desert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\Garnituri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\paste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\pizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\preparatePeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\preparatePorc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\preparatePui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\preparateVita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\produseTraditionale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\Racoritoare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\Salate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizMeniu\Specialitati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="vizualizareMeniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

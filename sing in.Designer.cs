@@ -38,11 +38,11 @@ namespace Pizza_Alex_Admin
             this.loginT = new System.Windows.Forms.Label();
             this.Register = new System.Windows.Forms.Button();
             this.showboxLogin = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button2 = new System.Windows.Forms.Button();
             this.clearRegister2 = new System.Windows.Forms.Button();
             this.pictureboxLogin = new System.Windows.Forms.PictureBox();
+            this.url = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxLogin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +54,7 @@ namespace Pizza_Alex_Admin
             this.logo.ForeColor = System.Drawing.SystemColors.Window;
             this.logo.Name = "logo";
             this.logo.UseVisualStyleBackColor = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // passwordLogin
             // 
@@ -89,6 +90,7 @@ namespace Pizza_Alex_Admin
             this.loginT.BackColor = System.Drawing.Color.Transparent;
             this.loginT.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.loginT.Name = "loginT";
+            this.loginT.Click += new System.EventHandler(this.loginT_Click);
             // 
             // Register
             // 
@@ -108,11 +110,6 @@ namespace Pizza_Alex_Admin
             this.showboxLogin.Name = "showboxLogin";
             this.showboxLogin.UseVisualStyleBackColor = false;
             this.showboxLogin.CheckedChanged += new System.EventHandler(this.showboxLogin_CheckedChanged);
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
             // 
             // button2
             // 
@@ -136,19 +133,28 @@ namespace Pizza_Alex_Admin
             // 
             // pictureboxLogin
             // 
+            this.pictureboxLogin.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.pictureboxLogin, "pictureboxLogin");
             this.pictureboxLogin.Name = "pictureboxLogin";
             this.pictureboxLogin.TabStop = false;
             this.pictureboxLogin.Click += new System.EventHandler(this.pictureboxRegister_Click);
             // 
+            // url
+            // 
+            resources.ApplyResources(this.url, "url");
+            this.url.BackColor = System.Drawing.Color.Transparent;
+            this.url.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.url.Name = "url";
+            this.url.Click += new System.EventHandler(this.url_Click);
+            // 
             // sing_in
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.url);
             this.Controls.Add(this.pictureboxLogin);
             this.Controls.Add(this.clearRegister2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.Register);
             this.Controls.Add(this.showboxLogin);
             this.Controls.Add(this.passwordLogin);
@@ -157,7 +163,7 @@ namespace Pizza_Alex_Admin
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.loginT);
             this.Controls.Add(this.logo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "sing_in";
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxLogin)).EndInit();
             this.ResumeLayout(false);
@@ -175,10 +181,10 @@ namespace Pizza_Alex_Admin
         private System.Windows.Forms.Label loginT;
         private System.Windows.Forms.Button Register;
         private System.Windows.Forms.CheckBox showboxLogin;
-        private System.Windows.Forms.Button button1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button clearRegister2;
         private System.Windows.Forms.PictureBox pictureboxLogin;
+        private System.Windows.Forms.Label url;
     }
 }

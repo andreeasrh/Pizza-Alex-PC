@@ -31,6 +31,8 @@ namespace Pizza_Alex_Admin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(meniu));
             this.panelDreapta = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.butMenu = new System.Windows.Forms.Button();
             this.butTable = new System.Windows.Forms.Button();
             this.butComenziF = new System.Windows.Forms.Button();
@@ -43,20 +45,38 @@ namespace Pizza_Alex_Admin
             this.close = new System.Windows.Forms.Button();
             this.ptnSlide = new System.Windows.Forms.PictureBox();
             this.panelCentru = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panelDreapta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelSus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptnSlide)).BeginInit();
             this.panelCentru.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDreapta
             // 
             this.panelDreapta.BackColor = System.Drawing.Color.Chocolate;
             this.panelDreapta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelDreapta.Controls.Add(this.button4);
+            this.panelDreapta.Controls.Add(this.button3);
             this.panelDreapta.Controls.Add(this.butMenu);
             this.panelDreapta.Controls.Add(this.butTable);
             this.panelDreapta.Controls.Add(this.butComenziF);
@@ -69,6 +89,20 @@ namespace Pizza_Alex_Admin
             this.panelDreapta.Size = new System.Drawing.Size(244, 612);
             this.panelDreapta.TabIndex = 0;
             this.panelDreapta.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDreapta_Paint);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(0, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 1;
             // 
             // butMenu
             // 
@@ -240,7 +274,6 @@ namespace Pizza_Alex_Admin
             // panelCentru
             // 
             this.panelCentru.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelCentru.Controls.Add(this.panel2);
             this.panelCentru.Controls.Add(this.panel3);
             this.panelCentru.Controls.Add(this.panel1);
             this.panelCentru.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -250,32 +283,167 @@ namespace Pizza_Alex_Admin
             this.panelCentru.TabIndex = 0;
             this.panelCentru.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCentru_Paint);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkRed;
-            this.panel2.Location = new System.Drawing.Point(15, 437);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(823, 511);
-            this.panel2.TabIndex = 0;
-            this.panel2.Visible = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel3.Location = new System.Drawing.Point(430, 23);
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Location = new System.Drawing.Point(848, 262);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(793, 508);
             this.panel3.TabIndex = 0;
             this.panel3.Visible = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkRed;
+            this.panel2.Location = new System.Drawing.Point(3, 31);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(823, 511);
+            this.panel2.TabIndex = 0;
+            this.panel2.Visible = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(68, 140);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Location = new System.Drawing.Point(13, 23);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(829, 515);
             this.panel1.TabIndex = 0;
             this.panel1.Visible = false;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(36, 24);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(148, 30);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Comenzi primite: ";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(36, 91);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(584, 30);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "1x Pizza Quatro Stagioni";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(36, 286);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(157, 30);
+            this.textBox4.TabIndex = 3;
+            this.textBox4.Text = "Comenzi acceptate";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(748, 77);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(78, 40);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Accept";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(748, 133);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(78, 40);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Accept";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(36, 139);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(584, 30);
+            this.textBox5.TabIndex = 6;
+            this.textBox5.Text = "1x Pizza Casei + Coca Cola 1L";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(748, 189);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(78, 40);
+            this.button7.TabIndex = 11;
+            this.button7.Text = "Accept";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(36, 183);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(584, 30);
+            this.textBox6.TabIndex = 9;
+            this.textBox6.Text = "1x Pizza Quatro Fromaggi + Sprite 0.5L";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(36, 450);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(584, 30);
+            this.textBox3.TabIndex = 14;
+            this.textBox3.Text = "1x Pizza Quatro Fromaggi + Sprite 0.5L";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(36, 406);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(584, 30);
+            this.textBox7.TabIndex = 13;
+            this.textBox7.Text = "1x Pizza Casei + Coca Cola 1L";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(36, 358);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(584, 30);
+            this.textBox8.TabIndex = 12;
+            this.textBox8.Text = "1x Pizza Quatro Stagioni";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(647, 189);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(78, 40);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Refuz";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(647, 133);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(78, 40);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "Refuz";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(647, 77);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(78, 40);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "Refuz";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // meniu
             // 
@@ -297,6 +465,9 @@ namespace Pizza_Alex_Admin
             this.panelSus.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptnSlide)).EndInit();
             this.panelCentru.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -320,5 +491,20 @@ namespace Pizza_Alex_Admin
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button8;
     }
 }

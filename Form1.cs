@@ -140,7 +140,8 @@ namespace Pizza_Alex_Admin
             else if (passwordRegister.Text == confirmpassRegister.Text)
             {
 
-                string host = "host =172.24.1.199;";
+                //string host = "host =172.24.1.199;";
+                string host = "host =127.0.0.1;";
                 string port = "port =3306;";
                 string db = "database =dbproiectjava;";
                 string user = "user=root;";

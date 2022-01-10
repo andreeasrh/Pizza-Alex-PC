@@ -20,7 +20,6 @@ C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex
 C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.dll
 C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.pdb
 C:\Users\tavit\OneDrive\Desktop\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.genruntimeconfig.cache
-C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.AssemblyReference.cache
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.Accountcreate.IdAngajat.resources
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.Inregistrare.resources
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.meniu.resources
@@ -76,3 +75,39 @@ C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Salate.resources
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizMeniu.Specialitati.resources
 C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza_Alex_Admin.vizulizareMeniu.resources
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\Microsoft.Dynamic.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\Microsoft.Scripting.Metadata.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\Microsoft.Scripting.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.AWT.WinForms.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Beans.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Charsets.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Cldrdata.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Corba.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Core.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Jdbc.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Localedata.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Management.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Media.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Misc.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Naming.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Nashorn.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Remoting.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Security.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.SwingAWT.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Text.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Tools.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.Util.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.XML.API.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.XML.Bind.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.XML.Crypto.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.XML.Parse.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.XML.Transform.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.XML.WebServices.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.OpenJDK.XML.XPath.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.Runtime.JNI.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IKVM.Runtime.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IronPython.Modules.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IronPython.SQLite.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IronPython.Wpf.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\bin\Debug\netcoreapp3.1\IronPython.dll
+C:\Users\horva\Desktop\GIT HUB\Pizza-Alex-PC\obj\Debug\netcoreapp3.1\Pizza Alex Admin.csproj.AssemblyReference.cache
